@@ -38,8 +38,8 @@ public class BaseTest {
     }
     @Before
     public void setUp() throws MalformedURLException, InterruptedException {
-        baseURL = "http://localhost:8082/Prueba_2020/";
-        hub = "http://172.20.211.40:4444/wd/hub";
+        baseURL = "http://localhost:8081/Prueba_2020/";
+        hub = "http://172.17.0.1:4444/wd/hub";// http://172.17.0.1:4444/wd/hub
         System.setProperty("webdriver.chrome.driver", "./Prerrequisitos/driver/chromedriver"); // Para Chrome
 //		String nodeURL= "http://192.168.239.133:8888/wd/hub";
         DesiredCapabilities dc = DesiredCapabilities.chrome();
